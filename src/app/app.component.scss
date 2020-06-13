@@ -1,3 +1,4 @@
+
 .gameboy * {
   position: absolute;
 }
@@ -13,7 +14,7 @@
   border: 5px solid black;
   border-radius: 5% 5% 20% 5%;
   //box-shadow: 12px 12px 0px #e8e3e7;
-  animation-name: bounce;
+  //animation-name: bounce;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
@@ -46,18 +47,29 @@
 }
 
 .screen-inner {
-  width: 60%;
-  height: 70%;
-  background: linear-gradient(
-      35deg,
-      #fc7cf8,
-      #ccffff
-    );
-  border: 2px solid black;
-  top: 13%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto; 
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  width: 115px;
+border-style: solid;
+border-color: lightcyan;
+
+  height: 115px;
+//   background: linear-gradient(
+//       35deg,
+//       #fc7cf8,
+//       #ccffff
+//     );
+//   border: 2px solid black;
+   top: 13%;
+   left: 50%;
+transform: translateX(-50%);
+   border-radius: 5%;
+}
+
+.grid-item{
+    border-color: grey;
+    border-style: solid;
 }
 
 .body {
